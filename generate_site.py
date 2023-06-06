@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# This file is part of aboutjulietteattard
+# Copyright (C) 2023 Juliette Attard
 import subprocess
 BASE_ARGV=['pandoc', '--self-contained', '--from=gfm', '--to=html']
 def convert_file(inputname, outputname):
