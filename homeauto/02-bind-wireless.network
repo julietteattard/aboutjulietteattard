@@ -1,0 +1,11 @@
+# This file is part of aboutjulietteattard
+# Copyright (C) 2023 Juliette Attard
+# MACVTAP DOES NOT WORK ON WIRELESS
+# THE INTERNET WARNED YOU
+# THEY WERE VAGUE
+# BUT THEY WERE RIGHT
+# YOU SHOULD TRUST THEM
+[Match]
+Name=wlp10s0
+[Network]
+DHCP=true

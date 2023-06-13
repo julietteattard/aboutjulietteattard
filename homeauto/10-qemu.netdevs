@@ -1,5 +1,0 @@
-[NetDev]
-name=qemuvlan
-kind=ipvlan
-[IPVLAN]
-Mode=L2

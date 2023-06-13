@@ -1,0 +1,7 @@
+# This file is part of aboutjulietteattard
+# Copyright (C) 2023 Juliette Attard
+[NetDev]
+Name=qemumacvtap0
+Kind=macvtap
+[MACVTAP]
+Mode=private

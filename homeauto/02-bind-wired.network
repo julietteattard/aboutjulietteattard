@@ -1,0 +1,7 @@
+# This file is part of aboutjulietteattard
+# Copyright (C) 2023 Juliette Attard
+[Match]
+Name=eno1
+[Network]
+MACVTAP=qemumacvtap0
+DHCP=false
