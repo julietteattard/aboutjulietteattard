@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # This file is part of aboutjulietteattard
 # Copyright (C) 2023 Juliette Attard
+systemctl enable systemd-networkd
 networkctl delete qemumacvtap0
 echo '
 ACTION=="add", SUBSYSTEM=="net", GROUP="netdev", MODE="0660"
