@@ -6,6 +6,6 @@
 # BUT THEY WERE RIGHT
 # YOU SHOULD TRUST THEM
 [Match]
-Name=wlp10s0
+Name=wlp8s0
 [Network]
 DHCP=true
