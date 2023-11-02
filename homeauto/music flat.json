@@ -1,0 +1,49 @@
+{
+    "output": {
+        "autogain#0": {
+            "bypass": false,
+            "input-gain": -4.0,
+            "maximum-history": 3600,
+            "output-gain": -5.0,
+            "reference": "Integrated",
+            "silence-threshold": -80.0,
+            "target": -14.999999999999948
+        },
+        "blocklist": [],
+        "filter#0": {
+            "bypass": false,
+            "frequency": 80.0,
+            "inertia": 10.0,
+            "input-gain": 0.0,
+            "mode": "12dB/oct Highpass",
+            "output-gain": 0.0,
+            "resonance": -3.0
+        },
+        "plugins_order": [
+            "autogain#0",
+            "filter#0",
+            "stereo_tools#0"
+        ],
+        "stereo_tools#0": {
+            "balance-in": 0.0,
+            "balance-out": 0.0,
+            "bypass": false,
+            "delay": 0.0,
+            "input-gain": 0.0,
+            "middle-level": 3.0,
+            "middle-panorama": 0.25,
+            "mode": "LR > LR (Stereo Default)",
+            "mutel": false,
+            "muter": false,
+            "output-gain": 0.0,
+            "phasel": false,
+            "phaser": false,
+            "sc-level": 1.0,
+            "side-balance": 0.0,
+            "side-level": 0.0,
+            "softclip": false,
+            "stereo-base": 0.0,
+            "stereo-phase": 0.0
+        }
+    }
+}
