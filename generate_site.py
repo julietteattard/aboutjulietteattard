@@ -7,6 +7,7 @@ def convert_file(inputname, outputname):
     subprocess.check_call(BASE_ARGV+['-o', outputname, '--']+[inputname])
 def main():
     convert_file('index.md','index.html')
+    convert_file('resume.md','resume.html')
 
 if __name__ == '__main__':
     main()
