@@ -4,197 +4,106 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>resume</title>
+  <title>Juliette Attard - Resume</title>
   <style>
-    html {
-      line-height: 1.5;
-      font-family: Georgia, serif;
-      font-size: 20px;
-      color: #1a1a1a;
-      background-color: #fdfdfd;
-    }
-    body {
-      margin: 0 auto;
-      max-width: 36em;
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      hyphens: auto;
-      overflow-wrap: break-word;
-      text-rendering: optimizeLegibility;
-      font-kerning: normal;
-    }
-    @media (max-width: 600px) {
-      body {
-        font-size: 0.9em;
-        padding: 1em;
-      }
-      h1 {
-        font-size: 1.8em;
-      }
-    }
-    @media print {
-      body {
-        background-color: transparent;
-        color: black;
-        font-size: 12pt;
-      }
-      p, h2, h3 {
-        orphans: 3;
-        widows: 3;
-      }
-      h2, h3, h4 {
-        page-break-after: avoid;
-      }
-    }
-    p {
-      margin: 1em 0;
-    }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
-    }
-    img {
-      max-width: 100%;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: 1.4em;
-    }
-    h5, h6 {
-      font-size: 1em;
-      font-style: italic;
-    }
-    h6 {
-      font-weight: normal;
-    }
-    ol, ul {
-      padding-left: 1.7em;
-      margin-top: 1em;
-    }
-    li > ol, li > ul {
-      margin-top: 0;
-    }
-    blockquote {
-      margin: 1em 0 1em 1.7em;
-      padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
-      color: #606060;
-    }
-    code {
-      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
-      font-size: 85%;
-      margin: 0;
-    }
-    pre {
-      margin: 1em 0;
-      overflow: auto;
-    }
-    pre code {
-      padding: 0;
-      overflow: visible;
-      overflow-wrap: normal;
-    }
-    .sourceCode {
-     background-color: transparent;
-     overflow: visible;
-    }
-    hr {
-      background-color: #1a1a1a;
-      border: none;
-      height: 1px;
-      margin: 1em 0;
-    }
-    table {
-      margin: 1em 0;
-      border-collapse: collapse;
-      width: 100%;
-      overflow-x: auto;
-      display: block;
-      font-variant-numeric: lining-nums tabular-nums;
-    }
-    table caption {
-      margin-bottom: 0.75em;
-    }
-    tbody {
-      margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
-    }
-    th {
-      border-top: 1px solid #1a1a1a;
-      padding: 0.25em 0.5em 0.25em 0.5em;
-    }
-    td {
-      padding: 0.125em 0.5em 0.25em 0.5em;
-    }
-    header {
-      margin-bottom: 4em;
-      text-align: center;
-    }
-    #TOC li {
-      list-style: none;
-    }
-    #TOC ul {
-      padding-left: 1.3em;
-    }
-    #TOC > ul {
-      padding-left: 0;
-    }
-    #TOC a:not(:hover) {
-      text-decoration: none;
-    }
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
-  </style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">html {
+color-scheme: inherit;
+}
+body {
+margin: 1em;
+max-width: 80ch;
+padding: 0.5em;
+}
+h1 {
+border-bottom: 0.1em solid;
+}
+h2 {
+border-bottom: 0.05em solid;
+}
+hr {
+break-after: page;
+}
+li {
+padding-left: 1em;
+}
+</style>
 </head>
 <body>
-<h2 id="juliette-attard">Juliette Attard</h2>
+<header id="title-block-header">
+<h1 class="title">Juliette Attard - Resume</h1>
+</header>
 <p>Linux OS Developer with hardware and systems engineering focus</p>
 <blockquote>
 <p>Open to remote roles in the US</p>
 </blockquote>
-<h3 id="skills">Skills</h3>
-<p>API generation</p>
-<p>Python <code>flask</code> application development</p>
-<p>Python packaging</p>
-<p>Linux storage mechanics
-(<code>scsi</code>/<code>pci-nvme</code>/<code>iSCSI</code>)</p>
-<p>Linux networking</p>
-<p>Performance entitlement analysis (flash, networking)</p>
-<p>From-scratch operating system build, packaging, testing</p>
-<p>CI/CD pipelines (<code>jenkins</code>/<code>travis</code>)</p>
-<h3 id="experience">Experience</h3>
+<h1 id="technical-skills">Technical Skills</h1>
+<ul>
+<li>API generation</li>
+<li>Python <code>flask</code> application development</li>
+<li>Python packaging</li>
+<li>C program debugging and maintenance (cpython, linux kernel, fio,
+systemd)</li>
+<li>From-scratch operating system build, packaging, testing</li>
+<li>Automated test development</li>
+<li>Linux storage mechanics
+(<code>scsi</code>/<code>pci-nvme</code>/<code>iSCSI</code>)</li>
+<li>Linux networking diagnostics and management automation (ethtool, ip,
+bgp, iptables)</li>
+<li>Linux kernel debugging and diagnostics (bpftrace, strace)</li>
+<li>Performance entitlement analysis using fio (flash, networking)</li>
+<li>CI/CD pipelines (<code>jenkins</code>/<code>travis</code>)</li>
+<li>x86 hardware verification and diagnostics</li>
+</ul>
+<h1 id="interpersonal-skills">Interpersonal skills</h1>
+<ul>
+<li>Mentoring of new hires including new-grads and experienced
+developers into hardware development and OS development roles</li>
+<li>Technical training and documentation for developers and support
+staff</li>
+<li>Issue triage and backlog management</li>
+<li>Software feature planning and organization for small and medium size
+teams (up to 15 members)</li>
+</ul>
+<hr />
+<h1 id="experience">Experience</h1>
 <p>IBM: Cloud Object Storage Hardware/Linux Engineer</p>
 <blockquote>
 <p>May 2013 - PRESENT</p>
 </blockquote>
-<p>Develop a custom GNU/Linux debian-based operating system &quot;ClevOS&quot;</p>
-<h4 id="architect-maintain-and-implement-the-hardware-abstraction-layer-for-large-scale-homogenous-cloud-object-storage">Architect,
-maintain and implement the hardware abstraction layer for large scale,
-homogenous Cloud Object Storage</h4>
+<p>Develop a custom GNU/Linux debian-based operating system &quot;ClevOS&quot;
+deployed on tens of thousands of storage machines worldwide</p>
+<h2 id="architect-maintain-and-implement-the-os-for-ibm-cloud-object-storage">Architect,
+maintain and implement the OS for IBM Cloud Object Storage</h2>
 <ul>
-<li>Software Installation</li>
-<li>Deployment of new devices</li>
-<li>Software upgrade and configuration management</li>
-<li>Networking configuration(LACP, 802.Q, BGP)</li>
-<li>Hardware replacement process automation (configuration-driven disk,
-fan, psu, nic, hba monitoring)</li>
+<li>Write and maintain code for OS installation and upgrade</li>
+<li>Write and maintain code for hardware management</li>
+<li>Write and maintain code for network configuration (LACP, 802.Q, BGP,
+iptables)</li>
+<li>Architect and maintain code for configuration-driven disk, fan, psu,
+nic, hba monitoring</li>
 </ul>
-<h4 id="security-posture-of-all-python-packages-in-clevos-authoring-a-tool-whl2debpy">Security
-Posture of all python-packages in ClevOS, authoring a tool
-whl2deb.py</h4>
+<h2 id="maintain-security-posture-of-all-python-packages-in-clevos">Maintain
+Security Posture of all python-packages in ClevOS</h2>
 <ul>
-<li>Converts <a href="https://peps.python.org/pep-0427/"><code>.whl</code></a> format
+<li>Write and maintain tool that converts <a href="https://peps.python.org/pep-0427/"><code>.whl</code></a> format
 PyPi packages into <a href="https://www.debian.org/doc/debian-policy/ch-binary.html"><code>.deb</code></a>
-binary debian archives.</li>
+binary debian archives.
+<ul>
 <li>Uses only PEP specified pip commands</li>
 <li>Generates all binary packages from source archives</li>
 <li>Self-building, single-file configuration</li>
@@ -202,22 +111,28 @@ binary debian archives.</li>
 <code>virtualenv</code> integration</li>
 <li>Elimination and coexistence of all debian-provided sources (no
 debian code outside of python3.9!)</li>
+</ul></li>
+<li>Migration of 40 projects to python3</li>
+<li>Manage and resolve issues created by automated scanning tools like
+dependabot and mend</li>
 </ul>
-<h4 id="hardware-lifecycle">Hardware lifecycle</h4>
+<h2 id="hardware-lifecycle">Hardware lifecycle</h2>
 <ul>
-<li>Unit-testing of HAL without access to hardware under test (devices
-&gt; 10 years old are in production with the complete set of features
-supported)</li>
+<li>Architect a unittest framework for hardware without access to
+hardware under test</li>
+<li>Enable testing of devices of devices a decade out of production with
+the complete set of features supported</li>
 <li>Driver backporting and kernel maintenance to enable new hardware
 features on stable kernel versions</li>
 <li>Component selection and development of hardware verification
 procedures for manufacturing</li>
 <li>Working with vendors for components, servers and storage enclosures
 to identify and resolve firmware and hardware issues identified during
-development, deployment, and lifecycle</li>
+development, deployment, and lifecycle (HPE, Cisco, Lenovo, Supermicro,
+Erricson, Dell/EMC, Seagate, Western Digital)</li>
 </ul>
-<h4 id="open-source-software-maintenance">Open-Source Software
-Maintenance</h4>
+<h2 id="open-source-software-maintenance">Open-Source Software
+Maintenance</h2>
 <ul>
 <li>Debug and analysis of kernel/open source library issues through code
 inspection and system tracing (strace, perf, pdb, and gdb)</li>
@@ -225,8 +140,8 @@ inspection and system tracing (strace, perf, pdb, and gdb)</li>
 the Linux kernel</li>
 <li>Static compilation of open-source packages for portability</li>
 </ul>
-<h4 id="python-application-performance">Python Application
-Performance</h4>
+<h2 id="python-application-performance">Python Application
+Performance</h2>
 <ul>
 <li>Develop and maintain a framework for identifying timeout conditions
 for underlying calls in a <code>flask</code> application to &quot;blame&quot; bad
@@ -239,8 +154,8 @@ to CPU savings)</li>
 application performance by identifying memory copies, and data
 reorganization</li>
 </ul>
-<h4 id="custom-linux-distribution-development">Custom Linux Distribution
-Development</h4>
+<h2 id="custom-linux-distribution-development">Custom Linux Distribution
+Development</h2>
 <ul>
 <li>Author a tool to generate <code>debian-live</code> images supporting
 both <code>ubuntu</code> and <code>debian</code> bases</li>
@@ -249,7 +164,7 @@ environments</li>
 <li>Generated application mocking frameworks using
 <code>docker</code></li>
 </ul>
-<h4 id="hardware-engineering">Hardware Engineering</h4>
+<h2 id="hardware-engineering">Hardware Engineering</h2>
 <ul>
 <li>Learn and use T10/SCSI Standards (SPC-4, SES-3, SAT, SBC, ZBC) daily
 to support storage operations and development on <code>SAS</code> and
@@ -261,20 +176,26 @@ including review of platform compatbility with <code>ZNS</code></li>
 <li>Identify critical performance characteristics of new servers,
 storage enclosures, networking components, drives, and flash through
 design analysis and empirical verification</li>
+<li>Port drivers intended for RHEL and other kernel versions to the
+ClevOS custom kernel</li>
 </ul>
-<h3 id="education">Education</h3>
-<p>Illinois Institute of Technology</p>
-<p>Master of Computer Science</p>
-<p>Bachelor of Computer Science</p>
+<hr />
+<h1 id="education">Education</h1>
+<p>Illinois Institute of Technology - Master of Computer Science</p>
 <blockquote>
-<p>Chicago, 2007 - 2014</p>
+<p>Chicago, 2013 - 2014</p>
+</blockquote>
+<p>Illinois Institute of Technology - Bachelor of Computer Science</p>
+<blockquote>
+<p>Chicago, 2007 - 2013</p>
 </blockquote>
 <p>Performed research with the Wireless Network and Communications
 Research Center with focus on data management and systems for managing
 large scale data generated by radio frequency monitoring</p>
-<h3 id="public-contributions">Public Contributions</h3>
-<h4 id="systemd--resolve-hardware-specific-issue-resulting-in-malformed-drive-vpd"><a href="http://ata-vpd-systemd.julietteattard.com">systemd — Resolve
-hardware specific issue resulting in malformed drive VPD</a></h4>
+<hr />
+<h1 id="public-contributions">Public Contributions</h1>
+<h2 id="systemd--resolve-hardware-specific-issue-resulting-in-malformed-drive-vpd"><a href="http://ata-vpd-systemd.julietteattard.com">systemd — Resolve
+hardware specific issue resulting in malformed drive VPD</a></h2>
 <ul>
 <li>Identified the path which resulted in drives being recognized
 incorrectly by udev using strace</li>
@@ -284,8 +205,8 @@ utility ata_id</li>
 <li>Performed verification on different SAT implementations across HBA
 vendors to reproduce and verify the condition</li>
 </ul>
-<h4 id="linux-add-sysfs-attributes-for-ata-vpd"><a href="http://ata-vpd-linux.julietteattard.com">Linux— Add sysfs
-attributes for ATA VPD</a></h4>
+<h2 id="linux-add-sysfs-attributes-for-ata-vpd"><a href="http://ata-vpd-linux.julietteattard.com">Linux— Add sysfs
+attributes for ATA VPD</a></h2>
 <ul>
 <li>Supported the effort of the systemd project to migrate more hardware
 management functions out of their udev tree and into other distribution
@@ -298,8 +219,8 @@ disks</li>
 identified by the fix for ata_id that enables all ATA specific handling
 to be relegated from udev and the systemd tree</li>
 </ul>
-<h4 id="linux-allow-non-root-users-to-perform-zbc-commands"><a href="http://zbc-linux-permissions.julietteattard.com">Linux— Allow
-non-root users to perform ZBC commands</a></h4>
+<h2 id="linux-allow-non-root-users-to-perform-zbc-commands"><a href="http://zbc-linux-permissions.julietteattard.com">Linux— Allow
+non-root users to perform ZBC commands</a></h2>
 <ul>
 <li>Identified that a specific set of system calls being run under
 non-root accounts were returning -EPERM by using strace</li>
@@ -309,9 +230,9 @@ flags</li>
 <li>Extended the list of system calls to include newly introduced ZBC
 commands under low privilege accounts which have write access</li>
 </ul>
-<h4 id="patent-us11023307b2--automatic-remediation-of-distributed-storage-system-node-components"><a href="http://node-fix-patent.julietteattard.com">Patent US11023307B2 —
+<h2 id="patent-us11023307b2--automatic-remediation-of-distributed-storage-system-node-components"><a href="http://node-fix-patent.julietteattard.com">Patent US11023307B2 —
 Automatic remediation of distributed storage system node
-components</a></h4>
+components</a></h2>
 <ul>
 <li>Fleets of hardware in distributed storage networks are typically
 assembled in multiple locations by hand, and may be modified during
@@ -320,9 +241,9 @@ performance, reliability, or function</li>
 <li>Devised mechanism by which fleets of similar hardware devices could
 identify nodes that required low-level configuration changes</li>
 </ul>
-<h4 id="patent-us10970149b2-automatic-node-hardware-configuration-in-a-distributed-storage-system"><a href="http://node-config-patent.julietteattard.com">Patent US10970149B2—
+<h2 id="patent-us10970149b2-automatic-node-hardware-configuration-in-a-distributed-storage-system"><a href="http://node-config-patent.julietteattard.com">Patent US10970149B2—
 Automatic node hardware configuration in a distributed storage
-system</a></h4>
+system</a></h2>
 <ul>
 <li>Deployments of distributed storage networks at scale typically
 involve large purchases of similar hardware and knowledge about

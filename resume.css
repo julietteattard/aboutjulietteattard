@@ -1,0 +1,22 @@
+html {
+  color-scheme: inherit;
+}
+
+body {
+  margin: 1em;
+  max-width: 80ch;
+  padding: 0.5em;
+}
+
+h1 {
+  border-bottom: 0.1em solid;
+}
+h2 {
+  border-bottom: 0.05em solid;
+}
+hr {
+  break-after: page;
+}
+li {
+  padding-left: 1em;
+}
